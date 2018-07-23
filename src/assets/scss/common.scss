@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "./config/config";
+@import "./config/reset";
+@import "./config/mixins";
+// @import url(//at.alicdn.com/t/font_225216_pumniag0rn2sxlxr.css);
+.ml-5 {
+  margin-left: rem(5);
+}
+
+.mr-5 {
+  margin-right: rem(5);
+}
+
+.ml-15 {
+  margin-left: rem(15);
+}
+
+.mr-15 {
+  margin-right: rem(15);
+}
+
+.ml-30 {
+  margin-left: rem(30);
+}
+
+.mr-30 {
+  margin-right: rem(30);
+}
+
+.mt-10 {
+  margin-top: rem(20);
+}
+
+.mb-10 {
+  margin-bottom: rem(20);
+}
+
+// box
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+// text
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+// color
+.green {
+  color: #00c082;
+}
+
+// font
+.fw-700 {
+  font-weight: 700;
+}
+
+#app {
+  overflow: hidden;
+  height: 100%;
+}
+
+body,
+html {
+  background: #f6f6f6;
+  height: 100%;
+}
+
+header {
+  margin: 30px 70px;
+  background: url(../images/app_experience/login.png);
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  section {
+    // margin: 20px 20px 0;
+  }
+  .title {
+    font-size: 60px;
+    height: 60px;
+    color: #000;
+  }
+  .description {
+    font-size: 28px; // margin: 5px 20px 20px;
+    height: 28px;
+    margin: 20px 0 0;
+  }
+}
+
+main {
+  margin: 0 30px 30px;
+  background-color: #fff;
+  font-size: 32px;
+  overflow: auto;
+  padding: 0 0 30px;
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  &.flow {
+    height: calc(100% - 168px);
+  }
+}

@@ -1,0 +1,79 @@
+$imgPath: '../../assets/images';
+main {
+  margin: 0 10px 30px;
+  background-color: #fff;
+  font-size: 32px;
+  overflow: hidden;
+  .alert {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    padding: 30px 0;
+    margin: 0 30px;
+    border-bottom: 1px dashed #333;
+    .agent {
+      color: #12c287;
+    }
+  }
+  .h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #666;
+    padding: 10px 0;
+    margin: 40px 30px 0;
+    border-bottom: 1px dashed #666;
+  }
+  .api-list {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex: none;
+      width: 50%;
+    }
+    .api-cell {
+      margin: 10px 20px 20px;
+    }
+    .api-btn {
+      border-radius: 10px 10px 0 0;
+      background: #12c287;
+      padding: 20px 0;
+      color: #fff;
+      text-align: center;
+    }
+    .api-desc {
+      border-radius: 0 0 10px 10px;
+      padding: 20px 16px 20px 100px;
+      background-color: #eee;
+      position: relative;
+      font-size: 28px;
+      line-height: 40px;
+      &:before {
+        content: "功能：";
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    .api-list {
+      li {
+        width: 33%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    .api-list {
+      li {
+        width: 25%;
+      }
+    }
+  }
+}
